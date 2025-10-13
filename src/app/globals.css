@@ -1,26 +1,70 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+ /* swiss ai callcenter color palette */
+  --sac-white: #FFF;
+  --sac-100: rgba(229, 102, 105, 1);
+  --sac-300: rgba(224, 72, 75, 1);
+  --sac-500: rgba(208, 35, 39, 1);
+  --sac-700: rgba(170, 29, 32, 1);
+  --sac-900: rgba(113, 19, 21, 1);
+  --sac-grey-100: rgba(186, 186, 186, 1);
+  --sac-grey-200: rgba(166, 166, 166, 1);
+  --sac-grey-300: rgba(140, 140, 140, 1);
+  --sac-grey-500: rgba(107, 107, 107, 1);
+  --sac-grey-700: rgba(74, 74, 74, 1);
+  --sac-grey-900: rgba(31, 31, 31, 1);
+  --sac-white: rgba(255, 255, 255, 1);
+  --background: var(--sac-white);
+  --foreground: var(--sac-grey-900);
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --default-font-family: "Montserrat";
+  --header-font-family: var(--default-font-family);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --body-default-font-size: 16px;
+  --body-default-font-weight: 400;
+  --body-default-line-height: 20px;
+
+  --body-emphasis-font-size: 16px;
+  --body-emphasis-font-weight: 700;
+  --body-emphasis-line-height: 20px;
+  --body-large-font-size: 20px;
+  --body-large-font-style: normal;
+  --body-large-font-weight: 400;
+  --body-large-letter-spacing: 0px;
+  --body-large-line-height: 24px;
+
+
+  h1 {
+    font-family: var(--default-font-family);
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 56px;
+  }
+
+  h2 {
+    font-family: var(--default-font-family);
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 40px;
+  }
+  h3 {
+    font-family: var(--default-font-family);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
   }
 }
+
+/* Global styles and CSS variables */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--default-font-family), Arial, Helvetica, sans-serif;
+}
+
+article.benefits {
+  background-color: var(--sac-grey-500);
+  color: var(--sac-white);
 }
