@@ -108,7 +108,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="relative w-24 h-24" aria-hidden="true">
-                Bild
+                Bild!
               </div> 
             </article>
 
