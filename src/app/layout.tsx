@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Swiss AI Call Center - AI Voice Agents That Sound Indistinguishable",
+  title: "Swiss AI Call Center - Your AI-Powered Customer Service Solution",
   description: "Cut costs by 70% while delivering superior customer experiences with AI voice agents that handle calls, qualify leads, and book meetings 24/7.",
 };
 

@@ -7,10 +7,10 @@ export default function Hero() {
       <div className="hero-container">
         <div className="hero-text-group">
           <h1 className="text-white">
-            AI Voice Agents That Sound Indistinguishable from Your Best Staff
+            AI Voice Agents that sound human and work like your best staff
           </h1>
           <p className="hero-subtitle">
-            Cut costs by 70% while delivering superior customer experiences with AI voice agents that handle calls, qualify leads, and book meetings 24/7.
+            Increase productivity, reduce missed calls, and deliver consistent 24/7 service, without adding headcount.
           </p>
         </div>
       </div>
