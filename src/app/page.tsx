@@ -6,7 +6,7 @@ import UseCases from "@/components/use-cases";
 import SectionHeader from "@/components/section-header";
 import BenefitCard from "@/components/benefit-card";
 import Footer from "@/components/footer";
-import Image from "next/image";
+import FAQ, { defaultFaqs } from "@/components/faq-section";
 
 export default function Home() {
   const benefitsData = [
@@ -108,7 +108,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
+  {/* FAQ Section */}
+  <FAQ faqs={defaultFaqs} />
+      
 
       {/* Footer */}
       <Footer />
