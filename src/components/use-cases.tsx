@@ -8,8 +8,7 @@ export default function UseCases() {
       bullet3: "Human handover for priority or critical incidents.",
       description: "Business Impact: Reduce average handling time by 40 %.",
       cta: "Call our AI Service Desk Agent",
-      // Placeholder for future PNG background
-      backgroundImage: ""
+      backgroundImage: "/images/swiss-ai-callcenter-it-desk.jpg"
     },
     {
       title: "Hotel Receptionist",
@@ -19,7 +18,7 @@ export default function UseCases() {
       bullet3: "Frees front-desk staff for in-person service.",
       description: "Business Impact: Never miss a guest call again, even after hours.",
       cta: "Call our AI Hotel Receptionist",
-      backgroundImage: "" // Placeholder for future PNG background
+      backgroundImage: "/images/swiss-ai-callcenter-hotel.jpg" // Placeholder for future PNG background
     },
     {
       title: "Sales Call",
