@@ -18,7 +18,7 @@ export default function UseCases() {
       bullet3: "Frees front-desk staff for in-person service.",
       description: "Business Impact: Never miss a guest call again, even after hours.",
       cta: "Call our AI Hotel Receptionist",
-      backgroundImage: "/images/swiss-ai-callcenter-hotel.jpg" // Placeholder for future PNG background
+      backgroundImage: "/images/swiss-ai-callcenter-hotel.jpg"
     },
     {
       title: "Sales Call",
@@ -28,7 +28,7 @@ export default function UseCases() {
       bullet3: "Adaptive responses based on customer intent.",
       description: "Business Impact: Convert leads 3× faster at half the cost.",
       cta: "Watch video for our AI Sales Agent",
-      backgroundImage: "" // Placeholder for future PNG background
+      backgroundImage: "/images/swiss-ai-callcenter-sales-desk.jpg"
  
     }
   ];
