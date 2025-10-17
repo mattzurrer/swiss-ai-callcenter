@@ -65,7 +65,7 @@ export default function ComparisonTable() {
   ];
 
   return (
-    <div className="w-full max-w-[935px] mx-auto">
+    <div className="w-full max-w-[936px] mx-auto">
       <div className="flex flex-col rounded-md overflow-hidden border-2 border-[color:var(--sac-grey-900)]">
         {/* Header */}
         <div className="flex items-center justify-between gap-3 p-4 md:p-6 bg-[var(--sac-grey-900)] rounded-t-md">

@@ -1,3 +1,5 @@
+import SectionHeader from "@/components/section-header";
+
 export default function UseCases() {
   const cases = [
     {
@@ -34,39 +36,44 @@ export default function UseCases() {
   ];
 
   return (
-    <section className="py-12 bg-[var(--sac-grey-500)]">
-      <div className="max-w-[1416px] mx-4 px-4">
+    <section className="py-12 bg-[var(--sac-grey-700)]">
+      <SectionHeader
+        title="Make a test call now and experience our agents in action"
+        subtitle=""
+        titleClassName="text-[var(--sac-white)] mb-6"
+        subtitleClassName="max-w-[640px] mx-auto text-[var(--sac-white)]"
+      />
+      <div className="max-w-[1416px] mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {cases.map((useCase, index) => (
             <div 
               key={index} 
               className="flex flex-col gap-8"
             >
-              {/* Robot AI Receptionist Image Area - Prepared for background PNG */}
               <div 
-                className="robot-ai-receptionist-image flex flex-col justify-end items-start p-6 md:p-12 rounded-lg bg-[var(--sac-grey-700)] min-h-[320px] md:min-h-[520px]"
+                className="flex flex-col justify-end items-start p-6 md:p-12 md:py-6 rounded-lg bg-[var(--sac-grey-700)] min-h-[320px] md:min-h-[520px]"
                 style={useCase.backgroundImage ? {
                   backgroundImage: `url(${useCase.backgroundImage})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 } : undefined}
               >
-                <h2 className="text-white">
+                <h2 className="text-white drop-shadow-md drop-shadow-[var:color(--sac-grey-900)]">
                   {useCase.title}
                 </h2>
               </div>
 
               {/* Text Content */}
               <div className="flex flex-col gap-6">
-                <h3 className="text-white font-montserrat text-xl md:text-2xl font-bold leading-8">
+                <h3 className="text-white">
                   {useCase.quote}
                 </h3>
                 <ul className="space-y-2">
                   {[1, 2, 3].map((num) => {
                     const bulletKey = `bullet${num}` as keyof typeof useCase;
                     return useCase[bulletKey] ? (
-                      <li key={num} className="text-white font-montserrat text-base font-normal leading-5">
-                        • {useCase[bulletKey]}
+                      <li key={num} className="text-white">
+                      {useCase[bulletKey]}
                       </li>
                     ) : null;
                   })}

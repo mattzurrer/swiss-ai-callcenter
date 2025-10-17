@@ -6,7 +6,7 @@ export default function cta() {
         <div className="max-w-[1416px] mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <h2 className="text-white text-center md:text-left">
-              Do you want your own AI?<br /> Call us now to make your life easier!
+              Start Your Conversational Voice AI Journey Today!
             </h2>
             <div className="flex flex-col items-center md:items-end gap-2">
             <Image 
@@ -17,7 +17,7 @@ export default function cta() {
             />
               {/* Phone Number */}
               <p className="text-white text-center">
-                Your AI team: +41 411 441 41 41
+                Call us now or Book a Demo
               </p>
             </div>
           </div>

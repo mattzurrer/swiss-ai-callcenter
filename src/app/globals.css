@@ -51,8 +51,14 @@
   h3 {
     font-family: var(--default-font-family);
     font-size: 24px;
-    font-weight: 600;
-    line-height: 32px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  h4 {
+    font-family: var(--default-font-family);
+    font-size: var(--body-emphasis-font-size);
+    font-weight: 700;
+    line-height: var(--body-emphasis-line-height);
   }
 }
 

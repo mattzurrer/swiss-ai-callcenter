@@ -11,18 +11,18 @@ interface FaqSectionProps {
 
 export default function FaqSection({ faqs }: FaqSectionProps) {
   return (
-    <section className="py-12 md:py-20">
-      <div className="max-w-[1416px] mx-auto px-4 md:px-8">
+    <section className="py-12 md:py-20 bg-[var(--sac-grey-100)]">
+      <div className="max-w-[936px] mx-auto px-4 md:px-8">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-center mb-12 text-[var(--sac-grey-900)]">
           Frequently Asked Questions
         </h2>
         <div className="space-y-6">
           {faqs.map((faq, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl md:text-2xl font-bold mb-2 text-[var(--sac-grey-900)]">
+              <h4 className="py-4">
                 {faq.question}
-              </h3>
-              <p className="text-base md:text-lg text-[var(--sac-grey-700)]">
+              </h4>
+              <p className="">
                 {faq.answer}
               </p>
             </div>
